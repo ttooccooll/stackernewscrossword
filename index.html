@@ -23,6 +23,7 @@
 		background: #121214;
 	}
 		table { 
+			margin-top: 30px;
 			border-collapse: collapse; 
 			border-spacing: 0; 
 			max-width: 100%;
@@ -31,8 +32,8 @@
 			width: 100%;
 		}
 		table td {
-			width: 5em;
-			height: 5em;
+			width: 4em;
+			height: 4em;
 			border: 1px solid rgb(255 255 255 / 18%);
 			padding: 0;
 			margin: 0;
@@ -73,7 +74,8 @@
 			font-weight: light;
 			line-height: normal;
 			color: #ddd;
-			margin-bottom: .15rem
+			margin-bottom: .15rem;
+			margin-left: -100px;
 		}
 
 		h2 {
@@ -98,23 +100,23 @@
 		
 		#puzzle-wrapper {
 			float: left;
-			width: 54%;
-			margin-right: 3%;
+			width: 48%;
+			align-items: center;
 		}
 		#puzzle-clues {
 			float: left;
-			width: 40%;
+			width: 50%;
+			display: flex;
+			align-items: space-around;
+			justify-content: space-around;
 		}
-		
-		#puzzle-clues li{
-			font-size: 1.2em;
-			margin: .3em;
-			line-height: 1.6em;
+
+		#across {
+			margin-right: 50px;
 		}
 
 		h3 {
 			color: #969696;
-			font-size: medium;
 			display: flex;
 			flex-direction: row;
 			align-items: center;
@@ -138,6 +140,7 @@
 		.onesat {
 			font-family: monospace;
 			margin-right: 30%;
+			font-size: small;
 		}
 
 		footer {
@@ -173,9 +176,10 @@
 	
 <div id="puzzle-wrapper"><!-- crossword puzzle appended here --></div>
 
-</br>
 <footer>
 	<div>made in Ohio <img src="ohio.png" fill="currentColor" style="width: 20px; height: 20px; background: #969696;"> by <a href="https://stacker.news/jasonb">@jasonb</a></div>
+	</br>
+	<div style="font-size: x-small;">I didn't get any permission from the real sn news guys, who probably think this is corny.</div>
 </footer>
 </body>
 </html>	
