@@ -64,7 +64,7 @@ ul[tabindex="1"] {
 h2 {
   background-color: #f9d12f;
   padding: 8px;
-  border-radius: 10px;
+  border-radius: 8px;
   width: fit-content;
 }
 
@@ -124,7 +124,7 @@ h3 {
 .onesat {
   font-family: monospace;
   margin-right: 30%;
-  font-size: small;
+  font-size: 14px;
 }
 
 footer {
