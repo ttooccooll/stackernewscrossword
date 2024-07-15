@@ -1,8 +1,3 @@
-
-/**
-* Jesse Weisbeck's Crossword Puzzle (for all 3 people left who want to play them)
-*
-*/
 (function($){
 	$.fn.crossword = function(entryData) {
 			/*
@@ -257,6 +252,12 @@
 									.append('<input maxlength="1" val="" type="text" tabindex="-1" />');
 							}
 						};
+						var startCoord = puzz.data[x - 1].orientation === 'across' ? entries[x - 1][0] : entries[x - 1][0];
+						var startCell = puzzCells.filter('[data-coords="' + startCoord + '"]');
+	
+						if (startCell.find('span').length === 0) {
+							startCell.append('<span>' + puzz.data[x - 1].position + '</span>');
+						}
 						
 					};	
 					

@@ -246,13 +246,61 @@
 					starty: 5
 				},
 				{
-					clue: "Offset current control (abbr.)",
-					answer: "occ",
+					clue: "the only thing my mouth and shoe share in common",
+					answer: "tongue",
+					position: 14,
+					orientation: "down",
+					startx: 1,
+					starty: 6
+				},
+				{
+					clue: "if you say this verb slowly enough, it sounds like something you might say while admiring a Picasso",
+					answer: "depart",
 					position: 15,
 					orientation: "down",
-					startx: 7,
+					startx: 6,
+					starty: 6
+				},
+				{
+					clue: "Bitcoiners are sometimes into a philosophy that refers to these as turnings",
+					answer: "eras",
+					position: 17,
+					orientation: "down",
+					startx: 5,
+					starty: 8
+				},
+				{
+					clue: "synonym of 15 down but much more dramatic",
+					answer: "embark",
+					position: 19,
+					orientation: "down",
+					startx: 2,
 					starty: 9
-				}
+				},
+				{
+					clue: "world’s most popular epitaph",
+					answer: "rip",
+					position: 21,
+					orientation: "down",
+					startx: 9,
+					starty: 9
+				},
+				{
+					clue: "get out of the way!",
+					answer: "duck",
+					position: 27,
+					orientation: "down",
+					startx: 7,
+					starty: 11
+				},
+				{
+					clue: "the toy that taught me my first physics lessons",
+					answer: "yoyo",
+					position: 28,
+					orientation: "down",
+					startx: 11,
+					starty: 11
+				},
 			] 
 	
 		$('#puzzle-wrapper').crossword(puzzleData);
