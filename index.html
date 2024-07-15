@@ -20,6 +20,7 @@
 		font: 62.5%/1.3em Helvetica, sans-serif;
 		width: 90.3%;
 		margin: 10px auto;
+		background: #121214;
 	}
 		table { 
 			border-collapse: collapse; 
@@ -32,10 +33,10 @@
 		table td {
 			width: 5em;
 			height: 5em;
-			border: 1px solid #cdcdcd;
+			border: 1px solid rgb(255 255 255 / 18%);
 			padding: 0;
 			margin: 0;
-			background-color: #333;
+			background-color: #121214;
 			position: relative;
 		}
 				
@@ -47,11 +48,11 @@
 			text-align: center;
 			font-size: 3em;
 			color: #666;
-			background-color: #f4f4f4;
+			background-color: rgb(255 255 255 / 8%);
 		}
 		
 		td input:focus {
-			background-color: #fff;
+			background-color: rgb(255 255 255 / 7%);
 		}
 		
 		td span {
@@ -64,14 +65,33 @@
 		
 		input.done {
 			font-weight: bold;
-			color: green;
+			color: #5c8001;
+		}
+
+		ul[tabindex="1"] {
+			font-size: medium;
+			font-weight: light;
+			line-height: normal;
+			color: #ddd;
+			margin-bottom: .15rem
+		}
+
+		h2 {
+			background-color: #f9d12f;
+			padding: 8px;
+			border-radius: 10px;
+			width: fit-content;
+		}
+
+		h2:hover {
+			background-color: #fbe076;
 		}
 		
 		.active,
-		.clues-active {
-			background-color: #ddd;
+		ul.clues-active {
+			color: rgb(46 153 209);
 		}
-		.clue-done {
+		ul.clue-done {
 			color: #999;
 			text-decoration: line-through;
 		}
@@ -91,14 +111,71 @@
 			margin: .3em;
 			line-height: 1.6em;
 		}
+
+		h3 {
+			color: #969696;
+			font-size: medium;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			font-weight: 500;
+			line-height: 17px;
+		}
+
+		.sn {
+			color: rgb(250 218 94);
+			text-shadow: 0 0 6px #fada5e;
+			margin-right: 35%;
+		}
 		
+        .sn svg {
+            width: 40px;
+            height: 40px;
+            fill: currentColor;
+            filter: drop-shadow(0 0 6px #fada5e);
+        }
+
+		.onesat {
+			font-family: monospace;
+			margin-right: 30%;
+		}
+
+		footer {
+			position: fixed;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			text-align: center;
+			padding: 10px;
+			color: #969696;
+			font-size: small;
+		}
+
+		a {
+			color: rgb(46 153 209);
+			text-decoration: none;
+		}
+
 	</style>
 
 </head>
 
 <body>
+	<h3>
+		<div class="sn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+				<path fill="currentColor" fill-rule="evenodd" d="m46.7 96.4 37.858 53.837-71.787 62.934L117.5 155.4l-40.075-52.854 49.412-59.492Zm156.35 41.546-49.416-58.509-34.909 116.771 44.25-67.358 58.509 59.25L241.4 47.725Z"/>
+			</svg>
+		</div>
+		<div class="onesat">1sat=1sat</div>
+		Welcome to the unofficial and probably unwelcome weekly stacker crossword puzzle. It's like the New York Times, but not lame.
+	</h3>
 	
 <div id="puzzle-wrapper"><!-- crossword puzzle appended here --></div>
 
+</br>
+<footer>
+	<div>made in Ohio <img src="ohio.png" fill="currentColor" style="width: 20px; height: 20px; background: #969696;"> by <a href="https://stacker.news/jasonb">@jasonb</a></div>
+</footer>
 </body>
 </html>	
