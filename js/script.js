@@ -157,6 +157,14 @@
 					starty: 13
 				},
 				{
+					clue: "southern 'delicacy'",
+					answer: "okra",
+					position: 30,
+					orientation: "across",
+					startx: 1,
+					starty: 14
+				},
+				{
 					clue: "one of 43’s nicknames inverted and spelled out",
 					answer: "em",
 					position: 1,
