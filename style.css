@@ -128,16 +128,24 @@ h3 {
 }
 
 footer {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
   text-align: center;
   padding: 10px;
   color: #969696;
   font-size: small;
-  background-color: rgb(5 5 5 / 50%);
+}
 
+.links {
+  font-size: medium;
+}
+
+.links a {
+  color: #969696;
+  font-size: medium;
+  margin: 10px;
+}
+
+.ohio {
+  margin-top: 10px;
 }
 
 a {
