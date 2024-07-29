@@ -190,3 +190,15 @@ a {
         justify-content: space-around;
     }
 }
+
+button {
+  background: none;
+  color: #969696;
+  border: none;
+  width: 50px;
+}
+
+button:hover {
+  color: #ddd;
+  cursor: pointer;
+}

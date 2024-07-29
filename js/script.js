@@ -315,3 +315,29 @@
 	})
 	
 })(jQuery)
+
+let isToggled = false;
+let usdPrice = null;
+
+async function fetchPrice() {
+	try {
+		const response = await fetch('https://mempool.space/api/v1/prices');
+		const data = await response.json();
+		usdPrice = data.USD.toFixed();
+	} catch (error) {
+		console.error('Error fetching the price:', error);
+	}
+}
+
+async function togglePrice() {
+	if (!usdPrice) {
+		await fetchPrice();
+	}
+	const button = document.querySelector('.onesat');
+	if (isToggled) {
+		button.textContent = '1sat=1sat';
+	} else {
+		button.textContent = `$${usdPrice}`;
+	}
+	isToggled = !isToggled;
+}
