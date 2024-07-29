@@ -202,3 +202,7 @@ button:hover {
   color: #ddd;
   cursor: pointer;
 }
+
+.onesat {
+  white-space: nowrap;
+}
